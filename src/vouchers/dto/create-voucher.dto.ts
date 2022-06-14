@@ -21,7 +21,7 @@ export class CreateVoucherDto {
     @IsDate()
     @Type(() => Date)
     @ApiProperty({ type: 'string' })
-    create_date: Date;
+    created_date: Date;
 
     @IsDate()
     @Type(() => Date)
