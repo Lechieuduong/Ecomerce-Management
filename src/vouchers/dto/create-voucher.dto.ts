@@ -40,6 +40,12 @@ export class CreateVoucherDto {
     @ApiProperty()
     maximum_discount_amount: number;
 
+    @IsNumber()
+    @IsOptional()
+    @IsOptional()
+    @ApiProperty()
+    quantity: number
+
     @ApiProperty({ type: 'boolean' })
     is_redeem_allowed: boolean;
 }

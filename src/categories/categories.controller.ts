@@ -14,7 +14,7 @@ import { ApiBearerAuth, ApiConsumes, ApiTags } from '@nestjs/swagger';
 import { diskStorage } from 'multer';
 import { extname } from 'path';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { HttpExceptionFilter } from 'src/filter/http-exception.filter';
+import { HttpExceptionFilter } from 'src/common/filter/http-exception.filter';
 import { CategoriesService } from './categories.service';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category-status.dto';

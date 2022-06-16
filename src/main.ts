@@ -9,13 +9,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Category example')
-    .setDescription('The tasks API description')
+    .setTitle('Ecomerce Management')
+    .setDescription('The API description')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
 
-  SwaggerModule.setup('api/category', app, document);
+  SwaggerModule.setup('api/ecomerce', app, document);
 
   const port = 5000;
   await app.listen(port);

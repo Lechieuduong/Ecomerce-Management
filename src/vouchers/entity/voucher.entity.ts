@@ -35,6 +35,9 @@ export class Voucher extends BaseEntity {
     @Column()
     maximum_discount_amount: number;
 
+    @Column()
+    quantity: number;
+
     @Column({ default: true })
     is_redeem_allowed?: boolean
 
